@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
+import Search from './search';
 
 function App() {
   const [value, setValue] = useState([]);
@@ -47,6 +48,7 @@ function App() {
 
   return (
     <div className='container p-10'>
+      <Search />
       <input
         type='text'
         name='search'
